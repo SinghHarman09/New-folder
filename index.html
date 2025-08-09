@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conference Registration Form</title>
+  </head>
+  <body>
+    <h1>Conference Registration Form</h1>
+    <form action="/submit" method="post">
+      <div>
+        <label for="username">Full name</label><br />
+
+        <input
+          style="margin-top: 5px"
+          type="text"
+          id="username"
+          name="username"
+          required
+          autofocus
+        />
+      </div>
+      <div style="margin-top: 5px">
+        <label for="email">Email Address</label><br />
+        <input
+          style="margin-top: 5px"
+          type="text"
+          name="emial"
+          id="email"
+          required
+        />
+      </div>
+      <div style="margin-top: 5px">
+        <label for="phone">Phone Number</label><br />
+        <input
+          style="margin-top: 5px"
+          type="text"
+          name="phone"
+          id="phone"
+          required
+        />
+      </div>
+      <div style="margin-top: 5px">
+        <label for="gender">Gender</label><br />
+        <label style="margin-top: 5px"
+          ><input type="radio" name="gender" value="male" />Male</label
+        ><br />
+        <label style="margin-top: 5px"
+          ><input type="radio" name="gender" value="female" />Female</label
+        >
+      </div>
+      <div style="margin-top: 5px">
+        <label for="intersts">Topics of Intersts</label><br />
+        <label> <input type="checkbox" name="interests" value="AI" />AI</label
+        ><br />
+        <label>
+          <input
+            type="checkbox"
+            name="Technology"
+            value="Technology"
+          />Technology</label
+        >
+      </div>
+      <div style="margin-top: 5px">
+        <label for="country">Country</label><br />
+        <select style="margin-top: 5px" name="country" id="country">
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">UK</option>
+          <option value="Australia">Australia</option>
+        </select>
+      </div>
+
+      <button style="margin-top: 10px" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
